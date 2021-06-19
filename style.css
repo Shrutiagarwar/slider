@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #6b8d70;
+}
+
+
+.slick-slide img{
+    margin:0 auto;
+    max-width: 120px;
+    border:3px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+    .item{
+        padding: 15px;
+        outline: none;
+    }
+.item-inner{
+    background: linear-gradient(45deg,#ff6600,#fff000);
+    border-radius: 18px;
+    text-align: center;
+    padding: 25px;
+}
+.item2 .item-inner{
+    background: linear-gradient(45deg,#0060ff,#fe0ff0);
+}
+.slick-slide{
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: all ease 0.5s;
+}
+.slick-slide.slick-current
+{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/* **************************** arrow control************************* */
+
+.slick-arrow{
+    position: absolute;
+    bottom: 0px;
+    z-index: 99;
+    background: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    width: 100px;
+    outline: none;
+}
+.slick-next{
+    left: 52%;
+}
+.slick-prev{
+    left: 43%;
+}
+.slick-list{
+    padding: 55px 0px!important;
+}

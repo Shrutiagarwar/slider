@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<style media="screen">
+  .left {
+    display: inline-block;
+    background: red;
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    left: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 70px;
+    color: white;
+    font-size: 40px;
+    top: 20px;
+  }
+
+  .center {
+
+    display: inline-block;
+    background: green;
+    height: 220px;
+    width: 25%;
+    left: 40vw;
+    position: absolute;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 70px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .right {
+    display: inline-block;
+    background: blue;
+    height: 200px;
+    width: 20%;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 70px;
+    color: white;
+    font-size: 40px;
+    top: 20px;
+  }
+</style>
+
+
+<body>
+
+
+
+  <div class="left l">Left</div>
+  <div class="center c">Center</div>
+  <div class="right r">Right</div>
+
+
+  <script type="text/javascript">
+    let left = document.querySelector(".l");
+    left.addEventListener("click", cl);
+
+    function cl() {
+
+      let center = document.querySelector(".c");
+      // let left=document.querySelector("l");
+      center.classList.remove("center");
+      center.classList.add("left");
+
+      left.classList.add("center");
+
+      // l.classList.remove("center");
+      // l.classList.add("left");
+      // center.classList.add("center");
+
+    }
+  </script>
+            
+
+</body>
+
+</html>
